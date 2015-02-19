@@ -25,10 +25,22 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mongo ODM, migrations and other tools for PHP developers</h3>
+        <h3>Products</h3>
 
+<ul>
+    <li><a href="#php-mongo">Mongo ODM</a></li>
+    <li><a href="#php-mongo-bundle">Mongo ODM Symfony Bumdle</a>
+    <li><a href="#php-mongo-yii">Mongo ODM Yii adapter</a></li>
+    <li><a href="#php-mongo-migrator">Mongo Migrator</a></li>
+</ul>
+
+<a name="php-mongo"/>
+<h3>Mongo ODM</h3>
 <p>Why to use this ODM? You can easily work with document data through comfortable getters and setters instead of array and don't check if key exist in array. Access to subdocument use dot-syntax. You can validate data passed to document before save. We give you events, which you can handle in different moments of document's life, and more things which make you life easier.</p>
+
+Github and documentation: https://github.com/sokil/php-mongo
+Download: https://github.com/sokil/php-mongo/releases/latest
+Install through Composer:
 <pre><code>
 {
     "require": {
@@ -36,6 +48,55 @@
     }
 }
 </code></pre>
+
+<a name="php-mongo-bundle"/>
+<h3>Mongo ODM Symfony bundle</h3>
+
+Github and documentation: <a href="https://github.com/sokil/php-mongo-bundle">https://github.com/sokil/php-mongo-bundle</a>
+Download: <a href="https://github.com/sokil/php-mongo-bundle/releases/latest">https://github.com/sokil/php-mongo-bundle/releases/latest</a>
+Install through Composer:
+<pre><code>
+{
+    "require": {
+        "sokil/php-mongo-bundle": "dev-master"
+    }
+}
+</code></pre>
+
+<a name="php-mongo-yii"/>
+<h3>Mongo ODM Yii adapter</h3>
+<p>Consists of PHPMongo adapter, data provider and log router for MongoDb.</p>
+Github and documentation: <a href="https://github.com/sokil/php-mongo-yii">https://github.com/sokil/php-mongo-yii</a>
+Download: <a href="https://github.com/sokil/php-mongo-yii/releases/latest">https://github.com/sokil/php-mongo-yii/releases/latest</a>
+Install through Composer:
+<pre><code>
+{
+    "require": {
+        "sokil/php-mongo-yii": "dev-master"
+    }
+}
+</code></pre>
+
+<a name="php-mongo-migrator"/>
+<h3>Mongo Migrator</h3>
+<p>Schema not required in MongoDb, so we dont need to create databases, collections or altering them. However there are some cases when migrations required in schemaless databases:
+<ul>
+<li>Creating collections with special parameters, like capped collection;
+<li>Renaming or deleting collections;
+<li>Creating, renaming or deleting fields;
+<li>Creating, changing or deleting indexes
+</ul>
+
+Github and documentation: <a href="https://github.com/sokil/php-mongo-migrator">https://github.com/sokil/php-mongo-migrator</a>
+Download: <a href="https://github.com/sokil/php-mongo-migrator/releases/latest">https://github.com/sokil/php-mongo-migrator/releases/latest</a>
+Install through Composer:
+<pre><code>
+{
+    "require": {
+        "sokil/php-mongo-migrator": "dev-master"
+    }
+}
+</code></pre>
     
-  </body>
+</body>
 </html>
