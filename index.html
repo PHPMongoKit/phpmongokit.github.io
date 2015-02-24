@@ -50,6 +50,36 @@
 }
 </code></pre>
 
+<h4>News</h4>
+
+<p><b>2015-02-20</b> Released v.1.12.7
+<ul>
+  <li>Define cursor's batch size</li>  
+</ul>
+
+<p><b>2015-02-06</b> Released v.1.12.6
+<ul><li>Accept expression array and callable when call `Collection::getDistinct()`</li></ul>
+
+<p><b>2015-02-01</b> Released v.1.12.5
+<ul>
+  <li>Fix update when expression defined as callable
+ <li>Fix deleting documents when expression specified as callable
+</ul>
+
+<p><b>2015-01-27</b> Released v.1.12.4
+<ul>
+  <li>If callable in `Dollection::getDocument()` specified, document always loaded directly omitting document pool.
+  <li>Fixed 'in' validator when custom error message specified
+ <li>Dependency from major version number of Symfony Event Dispatcher
+</ul>
+
+<p><b>2015-01-18</b> Released v.1.12.3
+<ul>
+  <li>Fixed bug with naming of validator in errors array. Removed suffix 'validator'.
+  <li>Behavior refactoring.
+  <li>Old validator name is kept for back compatibility and will be removed in next versions
+</ul>
+
 <a name="php-mongo-bundle"></a>
 <h3>Mongo ODM Symfony bundle</h3>
 
