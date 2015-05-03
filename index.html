@@ -54,6 +54,31 @@
 
 <h4>News</h4>
 
+<p><b>2015-05-03</b> Released v.1.13
+<ul>
+  <li>Optimistic locking
+  <li>Refactoring of mapping configs.
+  <li>Default argument removed from `Collection::getOption()`.
+  <li>Removed deprecated method `Collection::saveDocument()`.
+  <li>Removed deprecated method `Client::setConnection()`. Use Client::setMongoClient().
+  <li>Removed deprecated method `Client::getConnection()`. Use Client::getMongoClient().
+  <li>Removed `Document::pushFromArray()`. Use `Document::pushEach()`.
+  <li>Removed `Paginator::setQueryBuilder()’. Use `Paginator::setCursor()`.
+  <li>Removed `Document::fromArray()`. Use `Document::merge()` instead.
+  <li>Removed `Structure::load()`. Use `merge` or `mergeUnmidified` instead.
+  <li>Revision methods moved to `RevisionManager`. Call them from `Document` instance directly is deprecated. Use `Document::getRevisionManager()` instead.
+  <li>Mark Document::_scenario as private.
+  <li>Define relations in mapping.
+  <li>`Operator::getAll()` is deprecated. Use `Operator::toArray()`.
+  <li>Protected access of property Structure::_modifiedFields is deprecated. Use self::getModifiedFields().
+  <li>Protected access of property Structure::_originalData is deprecated. Use self::getOriginalData().
+  <li>Removed classes QueryBuilder and GridFSQueryBuilder. Hydration logic improved
+  <li>Refactor document saving
+  <li>Collection::deleteDocument() is deprecated. Use Document::delete()
+  <li>Collection::isVersioningEnabled() and Collection::enableVersioning() are deprecated. Use 'vrsioning' in mapping.
+  <li>Collection properties 'documentClass', 'versioning', '_index' and '_queryExpressionClass' are deprecated. Use mapping declarations instead.
+</ul>
+  
 <p><b>2015-03-03</b> Released v.1.12.8
 <ul>
   <li>Method 'Validator::validate()' marked as final
