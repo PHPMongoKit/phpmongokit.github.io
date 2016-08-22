@@ -54,6 +54,67 @@
 
 <h4>News</h4>
 
+<p><b>2016-08-18</b> Released v.1.18.1
+  <ul>
+    <li>Support of DBRefs
+  </ul>
+
+<p><b>2016-08-16</b> Released v.1.17
+<ul>
+  <li>`Client::$_mapping` set private. `Use Client::map()`
+  <li>Configure document class if collection class also configured by class prefix [#128](https://github.com/sokil/php-mongo/issues/128)
+</ul>
+
+<p><b>2016-06-27</b> Released v.1.16.1
+  <ul>
+    <li>Fixed aggregation pipeline setter
+  </ul>
+
+<p><b>2016-06-23</b> Released v.1.16
+<ul>
+  <li>Allow set embedded document and validate it;
+  <li>`\Sokil\Mongo\Structure\Arrayable` moves to `\Sokil\Mongo\ArrayableInterface`;
+  <li>`Structure::$_modifiedFields` and `Structure::$_originalData` set private;
+  <li>Document::_data is now deprecated, and replaced with protected property Document::schema;
+  <li>Documents not allowed to be cloned;
+  <li>Removed 'validator' suffix  from names of validation errors in array of validation errors obtained from Document::getErrors();
+</ul>
+
+<p><b>2016-04-27</b> Released v1.15.2
+  <ul>
+    <li>Update version of Event Dispatcher
+  </ul>
+
+<p><b>Released v.1.15.1 (2016-03-10)
+<ul>
+  <li>Allow delete indexes
+</ul>
+
+<p><b>Released v.1.15 (2016-03-01)
+<ul>
+  <li>Removed `Collection::createPipeline()`. Use `Collection::createAggregator`;
+  <li>Aggregator options may be passed as arguments of `Collection::aggregate($pipelines, $options)` or configured 
+  through methods of `Pipeline`;
+  <li>Experimental feature: aggregation returns Cursor, if third parameter passed `Collection::aggregate($pipelines, $options, $asCursor)`;
+  <li>`Collection::explainAggregate()` is deprecated. Use `Pipeline::explain()`;
+  <li>Added debug mode to `Client`;
+</ul>
+
+<p><b>Released v.1.14 (2016-01-30)
+  <ul>
+    <li>Fulltext search
+  </ul>
+
+<p><b>Released v.1.13.9 (2016-01-13)
+  <ul>
+    <li>Fixed bug #121 - Getting relation when document pool disabled
+  </ul>
+
+<p><b>2016-01-01</b> Released v.1.13.8
+  <ul>
+    <li>Added $addToSet operator
+  </ul>
+  
 <p><b>2015-09-27</b> Released v.1.13.7
 <ul>
   <li>Batch operations
