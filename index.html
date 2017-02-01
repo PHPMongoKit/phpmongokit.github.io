@@ -212,6 +212,31 @@
   <li>Old validator name is kept for back compatibility and will be removed in next versions
 </ul>
 
+        <a name="php-mongo-migrator"></a>
+<h1>Mongo Migrator</h1>
+<h3>Migration manager for MongoDB</h3>
+<a href="https://travis-ci.org/sokil/php-mongo-migrator"><img src="https://travis-ci.org/sokil/php-mongo-migrator.svg?branch=master"/></a>
+<a href="https://gitter.im/sokil/php-mongo-migrator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join Chat.svg"></a>
+
+<p>Schema not required in MongoDb, so we dont need to create databases, collections or altering them. However there are some cases when migrations required in schemaless databases:
+<ul>
+<li>Creating collections with special parameters, like capped collection;
+<li>Renaming or deleting collections;
+<li>Creating, renaming or deleting fields;
+<li>Creating, changing or deleting indexes
+</ul>
+
+<p>Github and documentation: <a href="https://github.com/sokil/php-mongo-migrator">https://github.com/sokil/php-mongo-migrator</a>
+<p>Download: <a href="https://github.com/sokil/php-mongo-migrator/releases/latest">https://github.com/sokil/php-mongo-migrator/releases/latest</a>
+<p>Install through Composer:
+<pre><code>
+{
+    "require": {
+        "sokil/php-mongo-migrator": "dev-master"
+    }
+}
+</code></pre>
+
 <a name="php-mongo-bundle"></a>
 <h1>Mongo ODM Symfony bundle</h1>
 
@@ -240,29 +265,14 @@
 }
 </code></pre>
 
-<a name="php-mongo-migrator"></a>
-<h1>Mongo Migrator</h1>
-<h3>Migration manager for MongoDB</h3>
-<a href="https://travis-ci.org/sokil/php-mongo-migrator"><img src="https://travis-ci.org/sokil/php-mongo-migrator.svg?branch=master"/></a>
-<a href="https://gitter.im/sokil/php-mongo-migrator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join Chat.svg"></a>
-
-<p>Schema not required in MongoDb, so we dont need to create databases, collections or altering them. However there are some cases when migrations required in schemaless databases:
-<ul>
-<li>Creating collections with special parameters, like capped collection;
-<li>Renaming or deleting collections;
-<li>Creating, renaming or deleting fields;
-<li>Creating, changing or deleting indexes
-</ul>
-
-<p>Github and documentation: <a href="https://github.com/sokil/php-mongo-migrator">https://github.com/sokil/php-mongo-migrator</a>
-<p>Download: <a href="https://github.com/sokil/php-mongo-migrator/releases/latest">https://github.com/sokil/php-mongo-migrator/releases/latest</a>
+<a name="yii2-mongo-odm"></a>
+<h1>Mongo ODM Yii2 adapter</h1>
+<p>Consists of PHPMongo adapter for MongoDb.</p>
+<p>Github and documentation: <a href="https://github.com/PHPMongoKit/yii2-mongo-odm">https://github.com/PHPMongoKit/yii2-mongo-odm</a>
+<p>Download: <a href="https://github.com/PHPMongoKit/yii2-mongo-odm/releases/latest">https://github.com/PHPMongoKit/yii2-mongo-odm/releases/latest</a>
 <p>Install through Composer:
 <pre><code>
-{
-    "require": {
-        "sokil/php-mongo-migrator": "dev-master"
-    }
-}
+composer require phpmongokit/yii2-mongo-odm
 </code></pre>
 
 <a href="https://github.com/sokil/php-mongo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
